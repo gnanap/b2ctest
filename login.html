@@ -11,10 +11,52 @@
 
 	<style>
 		/*TradeGothic Regular | $ftci-font-regular*/
-@font-face {
-  font-family:"TradeGothicLTStd";
-  src: url("https://raw.githubusercontent.com/gnanap/b2ctest/master/trade-gothic/TradeGothicLTStd.woff") format("woff");
-}
+		@font-face {
+		  font-family:"TradeGothicLTStd";
+		  src: url("https://raw.githubusercontent.com/gnanap/b2ctest/master/trade-gothic/TradeGothicLTStd.woff") format("woff");
+		}
+
+		/*TradeGothic Bold | $ftci-font-bold*/
+		@font-face {
+		  font-family:"TradeGothicLTStd-Bold";
+		  src: url("https://raw.githubusercontent.com/gnanap/b2ctest/master/trade-gothic/TradeGothicLTStd-Bold.woff") format("woff");
+		}
+
+		/*TradeGothic Bold2 | $ftci-font-bold2*/
+		@font-face {
+		  font-family:"TradeGothicLTStd-Bd2";
+		  src: url("https://raw.githubusercontent.com/gnanap/b2ctest/master/trade-gothic/TradeGothicLTStd-Bd2.woff") format("woff");
+		}
+
+		/*TradeGothic Condensed Bold | $ftci-font-condensed-bold*/
+		@font-face {
+		  font-family:"TradeGothicLTStd-BdCn20";
+		  src: url("https://raw.githubusercontent.com/gnanap/b2ctest/master/trade-gothic/TradeGothicLTStd-BdCn20.woff") format("woff");
+		}
+
+		/*TradeGothic Condensed | $ftci-font-condensed*/
+		@font-face {
+		  font-family:"TradeGothicLTStd-Cn18";
+		  src: url("https://raw.githubusercontent.com/gnanap/b2ctest/master/trade-gothic/TradeGothicLTStd-Cn18.woff") format("woff");
+		}
+
+		/*TradeGothic Narrow Light | $ftci-font-narrow-light-obl*/
+		@font-face {
+		  font-family:"TradeGothicLTStd-Cn18Obl";
+		  src: url("https://raw.githubusercontent.com/gnanap/b2ctest/master/trade-gothic/TradeGothicLTStd-Cn18Obl.woff") format("woff");
+		}
+
+		/*TradeGothic Oblique | $ftci-font-oblique*/
+		@font-face {
+		  font-family:"TradeGothicLTStd-Obl";
+		  src: url("https://raw.githubusercontent.com/gnanap/b2ctest/master/trade-gothic/TradeGothicLTStd-Obl.woff") format("woff");
+		}
+
+		/*TradeGothic Oblique Bold | $ftci-font-oblique-bold*/
+		@font-face {
+		  font-family:"TradeGothicLTStd-BoldObl";
+		  src: url("https://raw.githubusercontent.com/gnanap/b2ctest/master/trade-gothic/TradeGothicLTStd-BoldObl.woff") format("woff");
+		}
 		body {
 			font-family: "Poppins", sans-serif;
 			background-image: url('https://ftcidevapp.corp.frk.com/bgimg.0dc2eab5c0b1bb019b95.png') ;
@@ -29,15 +71,17 @@
 		}
 
 		h2{
-		    font-size: 2rem;
-			font-weight: 100;
-			margin-top: 2rem;
-			margin-bottom: .28em;
+		    font-size: 28px;
+			line-height:39px;
+			margin-top: 6rem;
+			margin-bottom: 1rem;
 			text-align: center;
-			font-family:TradeGothicLTStd;
+			color:#333333;
+			font-family:"TradeGothicLTStd-BdCn20";
 		}
 		p{
-			font-size: .96rem;
+			font-size: 1rem;
+			line-height:23px
 			margin-top: 0;
 			margin-bottom: 2.5em;
 			text-align: center;
@@ -77,8 +121,7 @@
 		}
 
 		.buttons button {
-			font-size: .9rem;
-			font-weight: 400;
+			font-size: 1rem;
 			padding: 0 30px;
 			min-width: 140px;
 			box-shadow: 0 3px 12px 0 rgba(0,0,0,.2);
@@ -87,9 +130,10 @@
 			color: #fff;
 			text-transform: uppercase;
 			line-height: 24px;
-			margin: 2rem auto 0 auto;
+			margin: 20px auto 32px auto;
 			border:0;
 			cursor:pointer;
+			font-family:"TradeGothicLTStd-Cn18";
 		}
 
 		label{
@@ -98,6 +142,7 @@
 			margin-top: 0.5rem;
 			margin-bottom: 0px;
 			font-size: .875rem;
+			font-family:"TradeGothicLTStd-Bd2";
 		}
 		input[type=text], input[type=password] {
 			border: 1px solid #eee;
@@ -108,6 +153,8 @@
 			border-radius: 0px;
 			display:block;
 			width:100%;
+			font-family:"TradeGothicLTStd-Bd2";
+			color: #4F758B;
 		}
 
 		*:focus {
@@ -115,13 +162,22 @@
 		}
 
 		.forgetpassword {
-			color: rgb(68, 107, 130);
-			font-size: 0.9rem;
-			line-height: 18px;
 			cursor:pointer;
 			margin:5px 0px;
-
-	}
+			ont-family: TradeGothicLTStd;
+			font-size: 14px;
+			
+			text-align: center;
+		}
+		.forgetpassword a{
+			color: #4F758B;
+			text-decoration:underline;
+		}
+		.entry-item{
+			margin-bottom:30px;
+		}
+	
+	
 
 	</style>
   </head>
@@ -129,28 +185,26 @@
 	<div class="wrapper">
 		<div class="logo">
 		  <img src="https://ftcidevapp.corp.frk.com/assets/imgs/logo.svg"/>
-		  <div  >
-			Your Login goes here - Kiran
-		</div>
 		</div>
 
-		
+
 
 	  <div id="formContent">
 		<!-- Tabs Titles -->
 		<!-- Icon -->
 
-
-		 <div id="api"  >
+		<div id="api"  >
 			Your Login goes here - Prakash
 		</div>
+		 
 		<div style="text-align:center">
 		<p class="forgetpassword">Forgot your username or password?</p>
 		<p class="forgetpassword"> <a href="http://ftcidevapp.corp.frk.com/enroll" >Already a client? Register now </a></p>
 		</div>
 
 	  </div>
+	  
+	  
 	</div>
   </body>
 </html>
-
